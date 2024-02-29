@@ -1,15 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import Main from "./Main";
 import reportWebVitals from "./reportWebVitals";
+
+import Dongurami from "./components/SideProjects/Dongurami";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Main />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/dongurami" element={<Dongurami />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
