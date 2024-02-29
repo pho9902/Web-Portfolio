@@ -1,3 +1,5 @@
+import styles from "../../styles/Nav/Nav.module.scss";
+
 export default function Nav() {
-  return <div>네브바</div>;
+  return <div className={styles.Wrap}>네브바</div>;
 }
