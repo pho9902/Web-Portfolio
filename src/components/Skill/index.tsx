@@ -1,5 +1,5 @@
 import { forwardRef } from "react";
-import styles from "../../styles/Skill/Skill.module.scss";
+import styles from "../../styles/skill/skill.module.scss";
 
 const Skill = forwardRef((props, ref) => {
   return (
