@@ -1,4 +1,4 @@
-import styles from "../../../styles/Nav/Nav.module.scss";
+import styles from "../../../styles/nav/nav.module.scss";
 import { useEffect, useRef, useState } from "react";
 
 const Nav = ({ scrollRef }: any) => {

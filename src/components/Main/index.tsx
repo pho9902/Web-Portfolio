@@ -4,8 +4,7 @@ import Projects from "../Projects";
 import Skill from "../Skill";
 import AboutMe from "../AboutMe";
 import Nav from "../Nav/MainNav";
-
-import styles from "../../styles/Main/Main.module.scss";
+import styles from "../../styles/main/main.module.scss";
 import { useRef } from "react";
 import Footer from "../Footer";
 import PnS from "../PnS";

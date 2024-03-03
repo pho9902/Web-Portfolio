@@ -1,5 +1,5 @@
 import Youtube from "react-youtube";
-import styles from "../../styles/PnS/PnS.module.scss";
+import styles from "../../styles/pns/pns.module.scss";
 import { forwardRef } from "react";
 import Slider from "react-slick";
 import "styles/PnS/Slick/slick.css";

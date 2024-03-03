@@ -1,5 +1,5 @@
 import { forwardRef, useEffect } from "react";
-import styles from "../../styles/Projects/Projects.module.scss";
+import styles from "../../styles/projects/projects.module.scss";
 import { useRef, useState } from "react";
 import { FaGithub, FaLaptopCode } from "react-icons/fa6";
 import { RiNotionFill, RiNpmjsFill } from "react-icons/ri";

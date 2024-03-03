@@ -1,5 +1,5 @@
 import { FaGithub } from "react-icons/fa6";
-import styles from "../../styles/Footer/Footer.module.scss";
+import styles from "../../styles/footer/footer.module.scss";
 import { IoMailOutline } from "react-icons/io5";
 export default function Footer() {
   const handleCopyClipBoard = async (text: string) => {

@@ -1,4 +1,4 @@
-import styles from "../../styles/Profile/Profile.module.scss";
+import styles from "../../styles/profile/profile.module.scss";
 import { IoPerson, IoMailOutline, IoCall } from "react-icons/io5";
 import { IoIosHome } from "react-icons/io";
 import { FaGraduationCap } from "react-icons/fa6";
