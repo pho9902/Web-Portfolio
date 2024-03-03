@@ -8,6 +8,7 @@ const Nav = ({ scrollRef }: any) => {
     { idx: 1, name: "Profile" },
     { idx: 2, name: "Skill" },
     { idx: 3, name: "Project" },
+    { idx: 4, name: "P&S" },
   ];
 
   const [navIndex, setNavIndex] = useState(null);

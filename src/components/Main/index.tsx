@@ -8,6 +8,7 @@ import Nav from "../Nav/MainNav";
 import styles from "../../styles/Main/Main.module.scss";
 import { useRef } from "react";
 import Footer from "../Footer";
+import PnS from "../PnS";
 
 function Main() {
   const scrollRef = useRef([]);
@@ -24,6 +25,7 @@ function Main() {
         <Skill ref={scrollRef} />
         <div className={styles.dotLine} />
         <Projects ref={scrollRef} />
+        <PnS ref={scrollRef} />
         <Footer />
       </div>
       <Nav scrollRef={scrollRef} />
