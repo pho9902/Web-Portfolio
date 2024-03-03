@@ -3,10 +3,15 @@ import { IoPerson, IoMailOutline, IoCall } from "react-icons/io5";
 import { IoIosHome } from "react-icons/io";
 import { FaGraduationCap } from "react-icons/fa6";
 import { FaBirthdayCake, FaGithub } from "react-icons/fa";
+import { forwardRef } from "react";
 
-export default function Profile() {
+const Profile = forwardRef((props, ref) => {
   return (
-    <div className={styles.Wrap}>
+    <div
+      className={styles.Wrap}
+      //@ts-ignore
+      ref={(profileRef) => (ref.current[1] = profileRef)}
+    >
       <div className={styles.headerBox}>
         <h1 className={styles.header}>Profile</h1>
         <div className={styles.underLine} />
@@ -49,4 +54,5 @@ export default function Profile() {
       </div>
     </div>
   );
-}
+});
+export default Profile;

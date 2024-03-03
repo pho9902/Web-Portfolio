@@ -1,4 +1,36 @@
 .Wrap {
-  border: 1px solid pink;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerBox {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+
+  .header {
+    margin-bottom: 0;
+  }
+
+  .underLine {
+    border-top: 5px solid red;
+    width: 50%;
+    margin-left: auto;
+  }
+}
+
+.mainContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+
+  .eachItem {
+    display: flex;
+    justify-content: space-between;
+    .itenHeader {
+    }
+  }
 }

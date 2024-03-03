@@ -1,8 +1,13 @@
+import { forwardRef } from "react";
 import styles from "../../styles/AboutMe/AboutMe.module.scss";
 
-export default function AboutMe() {
+const AboutMe = forwardRef((props, ref) => {
   return (
-    <div className={styles.Wrap}>
+    <div
+      className={styles.Wrap}
+      //@ts-ignore
+      ref={(aboutRef) => (ref.current[0] = aboutRef)}
+    >
       <div className={styles.leftContainer}>
         <h1 className={styles.header}>About Me</h1>
         <div className={styles.underLine} />
@@ -17,4 +22,5 @@ export default function AboutMe() {
       </p>
     </div>
   );
-}
+});
+export default AboutMe;
