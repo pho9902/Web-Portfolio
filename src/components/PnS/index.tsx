@@ -1,9 +1,9 @@
 import Youtube from "react-youtube";
-import styles from "../../styles/PnS/PnS.module.scss";
+import styles from "../../styles/pns/PnS.module.scss";
 import { forwardRef } from "react";
 import Slider from "react-slick";
-import "styles/PnS/Slick/slick.css";
-import "styles/PnS/Slick/slick-theme.css";
+import "styles/pns/slick/slick.css";
+import "styles/pns/slick/slick-theme.css";
 
 const PnS = forwardRef((props, ref) => {
   return (
