@@ -1,3 +1,12 @@
+import styles from "../../../styles/SideProjects/DonguramiV2.module.scss";
+
 export default function DonguramiV2() {
-  return <div>동그라미 ui, ux 기능 상세설명 페이지</div>;
+  return (
+    <div>
+      <div className={styles.headerBox}>
+        <h1 className={styles.header}>동그라미-V2</h1>
+        <div className={styles.underLine} />
+      </div>
+    </div>
+  );
 }

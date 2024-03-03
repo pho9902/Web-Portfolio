@@ -1,5 +1,6 @@
 import styles from "../../../styles/Nav/Nav.module.scss";
 import { useEffect, useRef, useState } from "react";
+import BrightBtn from "../BrightBtn";
 
 const Nav = ({ scrollRef }: any) => {
   const DETAIL = [
@@ -55,6 +56,7 @@ const Nav = ({ scrollRef }: any) => {
           {name}
         </button>
       ))}
+      <BrightBtn />
     </div>
   );
 };

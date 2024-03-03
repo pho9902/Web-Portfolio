@@ -33,19 +33,19 @@ const Profile = forwardRef((props, ref) => {
           </div>
           <div>
             <IoIosHome />
-            <span>서울노원</span>
+            <span>서울시 노원구</span>
           </div>
           <div>
             <IoMailOutline />
-            <span>메일</span>
+            <span>bagh9902@gmail.com</span>
           </div>
           <div>
             <IoCall />
-            <span>qksgj</span>
+            <span>010-9169-3840</span>
           </div>
           <div>
             <FaGraduationCap />
-            <span>졸업</span>
+            <span>18.03 - 23.08 인덕대학교 정보통신공학과</span>
           </div>
           <div>
             <FaGithub />

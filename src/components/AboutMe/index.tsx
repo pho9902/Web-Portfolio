@@ -12,7 +12,7 @@ const AboutMe = forwardRef((props, ref) => {
         <h1 className={styles.header}>About Me</h1>
         <div className={styles.underLine} />
       </div>
-      <p>
+      <p className={styles.intro}>
         안녕하세요 박현우입니다. <br />
         저는 새로운 기술을 받아들이는 데에 거리낌이 없는, 어떤 일이든 성장을
         위해서라면 주저하지 않을 준비가 된 신입 프론트엔드 개발자입니다. <br />

@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import styles from "../../../styles/Nav/Nav.module.scss";
+import BrightBtn from "../BrightBtn";
 
 export default function SideNav({ location }: any) {
   const navigate = useNavigate();
@@ -12,6 +13,7 @@ export default function SideNav({ location }: any) {
           </button>
           <button onClick={() => navigate("/imsangtae")}>ImSangTae</button>
           <button onClick={() => navigate("/")}>Main</button>
+          <BrightBtn />
         </div>
       );
     case "dongurami-v2":
@@ -20,6 +22,7 @@ export default function SideNav({ location }: any) {
           <button onClick={() => navigate("/dongurami")}>Dongurami</button>
           <button onClick={() => navigate("/imsangtae")}>ImSangTae</button>
           <button onClick={() => navigate("/")}>Main</button>
+          <BrightBtn />
         </div>
       );
     default:
@@ -30,6 +33,7 @@ export default function SideNav({ location }: any) {
           </button>
           <button onClick={() => navigate("/dongurami")}>Dongurami</button>
           <button onClick={() => navigate("/")}>Main</button>
+          <BrightBtn />
         </div>
       );
   }
