@@ -1,0 +1,38 @@
+@keyframes showUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 10%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+.Wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  background-image: url("../../../public/banner.jpg");
+  filter: brightness(95%);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 3rem;
+  animation: showUp 1s;
+  margin-bottom: 0;
+  color: white;
+}
+
+.underLine {
+  width: 80%;
+  margin-left: auto;
+  animation: showUp 1s;
+}
