@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
-import Main from "./Main";
+import Main from "./components/Main";
 import reportWebVitals from "./reportWebVitals";
 
 import Dongurami from "./components/SideProjects/Dongurami";

@@ -3,8 +3,13 @@ import styles from "../../styles/Banner/Banner.module.scss";
 export default function Banner() {
   return (
     <div className={styles.Wrap}>
-      <span>안녕하세요</span>
-      <span>프론트엔드 개발자 박현우 입니다</span>
+      <h1 className={styles.text}>
+        안녕하세요 :)
+        <br />
+        <strong>프론트엔드 개발자 박현우</strong> 입니다.
+      </h1>
+
+      <div className={styles.underLine} />
     </div>
   );
 }
