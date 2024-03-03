@@ -1,0 +1,42 @@
+@import "../util.scss";
+
+.Wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(234, 234, 234);
+  padding: 3% 0;
+}
+
+.headerBox {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+
+  .header {
+    margin-bottom: 0;
+  }
+
+  .underLine {
+    border-top: 5px solid red;
+    width: 50%;
+    margin-left: auto;
+  }
+}
+
+.mainContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+
+  .eachItem {
+    display: flex;
+    justify-content: space-between;
+
+    * {
+      width: 20%;
+    }
+  }
+}
