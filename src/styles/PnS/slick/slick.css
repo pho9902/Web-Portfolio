@@ -1,19 +1,28 @@
 /* Slider */
+@import "../../_util.scss";
+
 .slick-slider {
   position: relative;
-  text-align: center;
+
   display: block;
   box-sizing: border-box;
-
+  width: 50%;
+  margin: 0 auto;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
   -webkit-touch-callout: none;
   -khtml-user-select: none;
   -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  @media (max-width: 1023px) {
+    width: 80%;
+  }
 }
 
 .slick-list {
@@ -22,7 +31,7 @@
   display: block;
   overflow: hidden;
 
-  margin: 4vh 0;
+  margin: 0;
   padding: 0;
 }
 .slick-list:focus {

@@ -1,6 +1,5 @@
 import styles from "../../../styles/Nav/Nav.module.scss";
 import { useEffect, useRef, useState } from "react";
-import BrightBtn from "../BrightBtn";
 
 const Nav = ({ scrollRef }: any) => {
   const DETAIL = [
@@ -8,7 +7,7 @@ const Nav = ({ scrollRef }: any) => {
     { idx: 1, name: "Profile" },
     { idx: 2, name: "Skill" },
     { idx: 3, name: "Project" },
-    { idx: 4, name: "P&S" },
+    { idx: 4, name: "Study" },
   ];
 
   const [navIndex, setNavIndex] = useState(null);
@@ -45,7 +44,8 @@ const Nav = ({ scrollRef }: any) => {
   return (
     <div className={styles.Wrap}>
       {DETAIL.map(({ idx, name }) => (
-        <button
+        <div
+          className={styles.btn}
           key={idx}
           //@ts-ignore
           ref={(ref) => (navRef.current[idx] = ref)}
@@ -55,9 +55,8 @@ const Nav = ({ scrollRef }: any) => {
           }}
         >
           {name}
-        </button>
+        </div>
       ))}
-      <BrightBtn />
     </div>
   );
 };

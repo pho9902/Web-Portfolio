@@ -15,20 +15,39 @@ const Skill = forwardRef((props, ref) => {
 
       <div className={styles.mainContainer}>
         <div className={styles.eachItem}>
-          <h2 className={styles.itemHeader}>Language-</h2>
-          <p>Typescript | Javascript | CSS-in_JS | HTML | CSS</p>
+          <h3 className={styles.itemHeader}>Language-</h3>
+          <p className={styles.itemText}>Typescript</p>
+
+          <p className={styles.itemText}>Javascript</p>
+
+          <p className={styles.itemText}>CSS-in-JS</p>
+
+          <p className={styles.itemText}>HTML, CSS</p>
         </div>
         <div className={styles.eachItem}>
-          <h2 className={styles.itemHeader}>FrameWork-</h2>
-          <p>React | Next</p>
+          <h3 className={styles.itemHeader}>FrameWork-</h3>
+          <p className={styles.itemText}>React</p>
+
+          <p className={styles.itemText}>Next</p>
+          <p className={styles.itemText} />
+          <p className={styles.itemText} />
         </div>
         <div className={styles.eachItem}>
-          <h2 className={styles.itemHeader}>State Management-</h2>
-          <p>Redux(Toolkit) | Recoil | Jotai</p>
+          <h3 className={styles.itemHeader}>State Management-</h3>
+          <p className={styles.itemText}>Redux(Toolkit)</p>
+
+          <p className={styles.itemText}>Recoil</p>
+          <p className={styles.itemText}>Jotai</p>
+          <p className={styles.itemText} />
         </div>
         <div className={styles.eachItem}>
-          <h2 className={styles.itemHeader}>Cowork-</h2>
-          <p>Git | Jira | Figma</p>
+          <h3 className={styles.itemHeader}>Cowork-</h3>
+          <p className={styles.itemText}>Git</p>
+
+          <p className={styles.itemText}>Jira</p>
+
+          <p className={styles.itemText}>Figma</p>
+          <p className={styles.itemText} />
         </div>
       </div>
     </div>

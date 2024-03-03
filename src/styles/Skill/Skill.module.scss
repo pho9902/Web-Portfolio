@@ -1,8 +1,12 @@
+@import "../util.scss";
+
 .Wrap {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(234, 234, 234);
+  padding: 3% 0;
 }
 
 .headerBox {
@@ -30,7 +34,9 @@
   .eachItem {
     display: flex;
     justify-content: space-between;
-    .itenHeader {
+
+    * {
+      width: 20%;
     }
   }
 }

@@ -15,6 +15,7 @@ function Main() {
 
   return (
     <>
+      <Nav scrollRef={scrollRef} />
       <div className={styles.Wrap}>
         <Banner />
         <div className={styles.term} />
@@ -28,7 +29,6 @@ function Main() {
         <PnS ref={scrollRef} />
         <Footer />
       </div>
-      <Nav scrollRef={scrollRef} />
     </>
   );
 }

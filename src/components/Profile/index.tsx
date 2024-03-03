@@ -23,32 +23,42 @@ const Profile = forwardRef((props, ref) => {
           src="profileImg.jpg"
         />
         <div className={styles.info}>
-          <div>
+          <div className={styles.eachItem}>
             <IoPerson />
-            <span>박현우</span>
+            <span className={styles.text}>박현우</span>
           </div>
-          <div>
+          <div className={styles.eachItem}>
             <FaBirthdayCake />
-            <span>1999.02.12</span>
+            <span className={styles.text}>1999.02.12</span>
           </div>
-          <div>
+          <div className={styles.eachItem}>
             <IoIosHome />
-            <span>서울시 노원구</span>
+            <span className={styles.text}>서울시 노원구</span>
           </div>
-          <div>
+          <div className={styles.eachItem}>
             <IoMailOutline />
-            <span>bagh9902@gmail.com</span>
+            <span className={styles.text}>bagh9902@gmail.com</span>
           </div>
-          <div>
+          <div className={styles.eachItem}>
             <IoCall />
-            <span>010-9169-3840</span>
+            <span className={styles.text}>010-9169-3840</span>
           </div>
-          <div>
+          <div className={styles.eachItem}>
             <FaGraduationCap />
-            <span>18.03 - 23.08 인덕대학교 정보통신공학과</span>
+            <span className={styles.longText}>
+              인덕대 정보통신공학과 (18.03 - 23.08)
+            </span>
           </div>
-          <div>
+          <div className={styles.eachItem}>
             <FaGithub />
+            <span
+              className={styles.link}
+              onClick={() =>
+                (window.location.href = "https://github.com/pho9902")
+              }
+            >
+              GitHub
+            </span>
           </div>
         </div>
       </div>

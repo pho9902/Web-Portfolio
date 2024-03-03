@@ -1,5 +1,6 @@
 .Wrap {
-  width: 100%;
+  width: 90%;
+  margin-bottom: 3%;
 }
 
 .headerBox {
@@ -17,4 +18,38 @@
     width: 50%;
     margin-left: auto;
   }
+}
+
+.study {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  font-weight: bold;
+  margin-left: 5%;
+}
+
+.point {
+  cursor: pointer;
+  color: rgb(53, 53, 252);
+  text-decoration: underline;
+  &:hover {
+    filter: brightness(190%);
+  }
+}
+
+.videoContainer {
+  display: flex;
+  overflow: scroll;
+  * {
+    margin: 0 3%;
+  }
+}
+
+.dotLine {
+  height: 50px;
+  width: 100%;
+  margin-top: 50px;
+  border-top: 5px dashed lightgray;
 }

@@ -1,3 +1,5 @@
+@import "../util.scss";
+
 .Wrap {
   display: flex;
   justify-content: space-between;
@@ -21,7 +23,23 @@
 .header {
   margin-bottom: 0;
 }
-
 .intro {
   font-weight: 500;
+  font-style: italic;
+  line-height: 2rem;
+}
+
+@include notDeskTop {
+  .Wrap {
+    flex-direction: column;
+    height: 100%;
+
+    .leftContainer {
+      margin-bottom: 6vh;
+    }
+
+    .intro {
+      text-align: center;
+    }
+  }
 }

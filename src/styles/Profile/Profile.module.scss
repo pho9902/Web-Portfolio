@@ -1,13 +1,12 @@
 .Wrap {
   box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 0.1);
-  width: 600px;
-  padding: 0 100px 100px 100px;
-  text-align: center;
+  width: fit-content;
+  padding-bottom: 100px;
+  // text-align: center;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
 }
 
 .headerBox {
@@ -30,16 +29,49 @@
 .infoWrap {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 70%;
 
   .profileImg {
-    width: 200px;
+    width: 30%;
     object-fit: conver;
   }
 
   .info {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
+    padding-left: 20%;
+    .eachItem {
+      display: flex;
+      align-items: center;
+      font-size: large;
+      margin-bottom: 5%;
+    }
+    .longText {
+      font-size: medium;
+      margin-left: 15px;
+    }
+
+    .text {
+      margin-left: 15px;
+    }
+
+    .dura {
+      margin-left: 12%;
+    }
+  }
+}
+
+.githubIcon {
+  cursor: pointer;
+}
+
+.link {
+  margin-left: 15px;
+  cursor: pointer;
+  color: rgb(53, 53, 252);
+  text-decoration: underline;
+  &:hover {
+    filter: brightness(190%);
   }
 }
