@@ -2,9 +2,8 @@ import Youtube from "react-youtube";
 import styles from "../../styles/PnS/PnS.module.scss";
 import { forwardRef } from "react";
 import Slider from "react-slick";
-import "../../styles/PnS/Slick/slick.css";
-import "../../styles/PnS/Slick/slick-theme.css";
-import { IoMailOutline } from "react-icons/io5";
+import "styles/PnS/Slick/slick.css";
+import "styles/PnS/Slick/slick-theme.css";
 
 const PnS = forwardRef((props, ref) => {
   return (
