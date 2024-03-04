@@ -14,13 +14,13 @@ export default function Footer() {
   return (
     <div className={styles.Wrap}>
       <FaGithub
-        size={50}
+        size={30}
         onClick={() => {
           window.location.href = "https://github.com/pho9902";
         }}
       />
       <IoMailOutline
-        size={50}
+        size={30}
         onClick={() => {
           handleCopyClipBoard("bagh9902@gmail.com");
         }}
