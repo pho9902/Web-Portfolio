@@ -1,9 +1,6 @@
 import Youtube from "react-youtube";
 import styles from "../../styles/pns/pns.module.scss";
 import { forwardRef } from "react";
-import Slider from "react-slick";
-import "styles/pns/slick/slick.css";
-import "styles/pns/slick/slick-theme.css";
 
 const PnS = forwardRef((props, ref) => {
   return (
@@ -14,7 +11,7 @@ const PnS = forwardRef((props, ref) => {
         <div className={styles.underLine} />
       </div>
       <div className={styles.study}>
-        <h2>모던 자바스크립트 Deep Dive study</h2>
+        <h1>모던 자바스크립트 Deep Dive study</h1>
         <p className={styles.text}>
           스터디원들이 같은 책을 읽고 작성한 문서를{" "}
           <span
@@ -38,19 +35,54 @@ const PnS = forwardRef((props, ref) => {
           <h1 className={styles.header}>Presentation</h1>
           <div className={styles.underLine} />
         </div>
-        <h2>Tech Talk</h2>
-        <p>10분 세미나 형식의 CS, 개발 관련 지식 발표 활동 영상 자료</p>
-        <Slider
-          dots={true}
-          infinite={true}
-          speed={500}
-          slidesToScroll={1}
-          slidesToShow={1}
-        >
-          <Youtube videoId="t-FzM7QiS2U" />
-          <Youtube videoId="rGpzdfWUJtE" />
-          <Youtube videoId="QJPJ-_SQKAg" />
-        </Slider>
+        <h1>Tech Talk</h1>
+        <p className={styles.text}>
+          10분 세미나 형식의 CS, 개발 관련 지식 발표 활동 영상 자료
+        </p>
+        <div className={styles.videoContainer}>
+          <Youtube
+            opts={{
+              width: "530",
+              height: "315",
+              playerVars: {
+                autoplay: 0,
+                rel: 0,
+              },
+            }}
+            onEnd={(e) => {
+              e.target.stopVideo(0);
+            }}
+            videoId="t-FzM7QiS2U"
+          />
+          <Youtube
+            opts={{
+              width: "530",
+              height: "315",
+              playerVars: {
+                autoplay: 0,
+                rel: 0,
+              },
+            }}
+            onEnd={(e) => {
+              e.target.stopVideo(0);
+            }}
+            videoId="rGpzdfWUJtE"
+          />
+          <Youtube
+            opts={{
+              width: "530",
+              height: "315",
+              playerVars: {
+                autoplay: 0,
+                rel: 0,
+              },
+            }}
+            onEnd={(e) => {
+              e.target.stopVideo(0);
+            }}
+            videoId="QJPJ-_SQKAg"
+          />
+        </div>
       </div>
     </div>
   );

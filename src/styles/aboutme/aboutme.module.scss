@@ -4,8 +4,8 @@
   display: flex;
   justify-content: space-between;
   width: 90%;
-  height: 70vh;
   align-items: center;
+  flex-direction: column;
 }
 
 .leftContainer {
@@ -22,11 +22,15 @@
 
 .header {
   margin-bottom: 0;
+  font-weight: bold;
+  font-size: 3rem;
 }
 .intro {
   font-weight: 500;
   font-style: italic;
   line-height: 2rem;
+  font-size: larger;
+  margin-top: 8%;
 }
 
 @include notDeskTop {

@@ -42,22 +42,35 @@ const Nav = ({ scrollRef }: any) => {
   }, [scrollRef]);
 
   return (
-    <div className={styles.Wrap}>
-      {DETAIL.map(({ idx, name }) => (
+    <>
+      <div className={styles.Wrap}>
         <div
-          className={styles.btn}
-          key={idx}
-          //@ts-ignore
-          ref={(ref) => (navRef.current[idx] = ref)}
+          className={styles.logo}
           onClick={() => {
-            //@ts-ignore
-            setNavIndex(idx);
+            window.location.reload();
           }}
         >
-          {name}
+          WebPortfolio
         </div>
-      ))}
-    </div>
+
+        {DETAIL.map(({ idx, name }) => (
+          <div
+            className={styles.btn}
+            key={idx}
+            //@ts-ignore
+            ref={(ref) => (navRef.current[idx] = ref)}
+            onClick={() => {
+              //@ts-ignore
+              setNavIndex(idx);
+            }}
+          >
+            {name}
+          </div>
+        ))}
+        <div></div>
+      </div>
+      <div className={styles.underLine} />
+    </>
   );
 };
 
