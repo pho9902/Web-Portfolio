@@ -40,48 +40,9 @@ const PnS = forwardRef((props, ref) => {
           10분 세미나 형식의 CS, 개발 관련 지식 발표 활동 영상 자료
         </p>
         <div className={styles.videoContainer}>
-          <Youtube
-            opts={{
-              width: "530",
-              height: "315",
-              playerVars: {
-                autoplay: 0,
-                rel: 0,
-              },
-            }}
-            onEnd={(e) => {
-              e.target.stopVideo(0);
-            }}
-            videoId="t-FzM7QiS2U"
-          />
-          <Youtube
-            opts={{
-              width: "530",
-              height: "315",
-              playerVars: {
-                autoplay: 0,
-                rel: 0,
-              },
-            }}
-            onEnd={(e) => {
-              e.target.stopVideo(0);
-            }}
-            videoId="rGpzdfWUJtE"
-          />
-          <Youtube
-            opts={{
-              width: "530",
-              height: "315",
-              playerVars: {
-                autoplay: 0,
-                rel: 0,
-              },
-            }}
-            onEnd={(e) => {
-              e.target.stopVideo(0);
-            }}
-            videoId="QJPJ-_SQKAg"
-          />
+          <Youtube className={styles.youtube} videoId="t-FzM7QiS2U" />
+          <Youtube className={styles.youtube} videoId="rGpzdfWUJtE" />
+          <Youtube className={styles.youtube} videoId="QJPJ-_SQKAg" />
         </div>
       </div>
     </div>
